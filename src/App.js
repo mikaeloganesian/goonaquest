@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './scss/style.scss';
+import Menu from "./components/Menu";
+import Timer from "./components/Timer";
+import Cave from "./assets/cave.png";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Menu />
+        <img className="cave__image" src={Cave} alt="cave"/>
+        <div className="timer__position">
+            <Timer />
+        </div>
     </div>
   );
 }

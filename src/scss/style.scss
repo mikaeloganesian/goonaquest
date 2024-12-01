@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Quest', sans-serif;
+}
+
+body {
+  background: #251E29;
+}
+
+@font-face {
+  font-family: 'Quest';
+  src: url("../fonts/Quest.ttf") format('truetype');
+  font-weight: normal;
+}
+
+
+
+
+.active {
+  color: #F9CA6D;
+}
+
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1C171E;
+  width: 100%;
+  height: 50px;
+
+  .menu__points {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    .point {
+      margin: 0 30px;
+    }
+    .level {
+      font-size: 22px;
+    }
+  }
+}
+
+.timer__container {
+  color: #F9CA6D;
+  text-align: center;
+  display: block;
+  .timer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    .timer__value {
+      transition: 0.3s all;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      font-size: 72px;
+    }
+    .arrow__container {
+      .arrow {
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        background: #F9CA6D;
+      }
+    }
+  }
+}
+
+.cave__image {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+
+.timer__position {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
